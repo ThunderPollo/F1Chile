@@ -1,0 +1,167 @@
+/* Resetear settings del navegador - Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+p {
+    line-height: 1.5;
+}
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #cc0000;
+    padding: 30px 20px;
+    z-index: 1;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header__content-title{
+    color: black;
+}
+.header__content-navbar{
+    display: flex;
+}
+.header__content-navbar a{
+margin: 0 15px;
+color: white;
+font-weight: 700;
+}
+.header__content-tile{
+    color: white;
+}
+body {
+    height: 2000px;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+.whatsapp{
+    /* position fixed toma como referencia el viewport, o TODO lo visible de la pantalla */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+ }
+
+ .card{
+    background-color: #011e3d;
+    padding: 20px;
+    /* border-radius: 10px; */
+ }
+ .card__title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+ }
+ .card__description{
+    margin-bottom: 40px;
+    color: white;
+ }
+ .card__link{
+    background-color: #ffcc00;
+    display: inline-block;
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+    color: #011e3d;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+ }
+ .card__header__img {
+    width: auto;
+    border-style: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ }
+
+ .card_header {
+    position: relative;
+ }
+ .ultima{
+    margin-top: 60px;
+    padding: 0 20px;
+    
+ }
+
+ /* PREGUNTAR A MELISA CÓMO PUEDO HACER PARA QUE EL TEXTO QUEDE CENTRADO EN EL BLOQUE */
+ .ultima__title {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-image: url(Assets/Diseño\ sin\ título\ \(5\).png);
+    height: 80px;
+    background-size: cover;
+    max-width: 1200px;
+    margin: 10px auto;   
+    padding-top: 20px;
+ }
+ .ultima__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+ }
+.background__image{
+    background-image: url(Assets/2.png);
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;  
+
+}
+.background__image-text{
+    color: black;
+    background-color: azure;
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;   
+
+}
+
+ /* Desde acá hacia abajo comenzamos a declarar los media queries */
+ /* Mobile last: breakpoint de mayor a menor */
+ @media (max-width: 1240px) {
+    .ultima__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+ }
+ @media (max-width: 900px) {
+    .header__content-navbar{
+        display: none
+    }
+ }
+
+ @media (max-width: 830px) {
+    .ultima__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+ 
