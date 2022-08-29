@@ -165,7 +165,11 @@ font-weight: 700;
 }
 .footer a{
     color: white;
-    
+}
+.resumen2021__content{
+    display: flex;
+    flex-direction: row;   
+
 }
 
  /* Desde acá hacia abajo comenzamos a declarar los media queries */
