@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    margin-bottom: 20px;
+}
 a {
     text-decoration: none;
 }
@@ -25,7 +28,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .header__content-title{
@@ -43,7 +46,7 @@ font-weight: 700;
     color: white;
 }
 body {
-    height: 2000px;
+    /* height: 2000px; */
     font-family: 'BhuTuka Expanded One', cursive;
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -85,7 +88,7 @@ body {
     margin-right: 25%;
  }
  .card__header__img {
-    width: auto;
+    width: 100%;
     border-style: none;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -97,7 +100,7 @@ body {
  .ultima{
     margin-top: 60px;
     padding: 0 20px;
-    
+
  }
 
  /* PREGUNTAR A MELISA CÓMO PUEDO HACER PARA QUE EL TEXTO QUEDE CENTRADO EN EL BLOQUE */
@@ -112,7 +115,7 @@ body {
     height: 80px;
     background-size: cover;
     max-width: 1200px;
-    margin: 10px auto;   
+    margin: 10px auto;
     padding-top: 20px;
  }
  .ultima__content{
@@ -122,7 +125,7 @@ body {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    
+
  }
 .background__image{
     background-image: url(Assets/2.png);
@@ -130,7 +133,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;  
+    background-position: center;
 
 }
 .background__image-text{
@@ -141,8 +144,28 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    padding: 10px;   
+    padding: 10px;
 
+}
+
+.footer{
+background-color: #CC0000;
+width: auto;
+height: 100px;
+font-weight: 700;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.footer a{
+    color: white;
+    
 }
 
  /* Desde acá hacia abajo comenzamos a declarar los media queries */
@@ -152,6 +175,11 @@ body {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 50px;
     }
+    .card_header{
+        /* display: flexbox; */
+        justify-items: center;
+    }
+
  }
  @media (max-width: 900px) {
     .header__content-navbar{
@@ -163,5 +191,4 @@ body {
     .ultima__content{
         grid-template-columns: repeat(1, 1fr);
     }
- 
- 
+
