@@ -255,5 +255,8 @@ font-weight: 700;
     .ultima__content{
         grid-template-columns: repeat(1, 1fr);
     }
+    .footer__content{
+        display: none;
+    }
     
  }
