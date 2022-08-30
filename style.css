@@ -128,15 +128,7 @@ body {
     margin: 0 auto;
 
  }
-.background__image{
-    background-image: url(Assets/2.png);
-    padding: 120px 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 
-}
 .background__image-text{
     color: black;
     background-color: azure;
@@ -168,24 +160,68 @@ font-weight: 700;
     color: white;
 }
 .resumen2021__content{
-    display: flex;
-    flex-direction: row;   
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 20px;   
+    margin-left: 40px ;
 }
 .resumen2021__card{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-}
+    margin-top: 10px;
+    background-color: #011e3d;
+    align-items: center;
+    }
 .resumen2021__card h2{
     text-align: center;
     padding-bottom: 20px;
-    color: #011e3d;
+    color: white;
+    font-size: x-large;
+}
+.resumen2021__card p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.resumen2021__card__text{
+    color: white;
+    padding-top: 10px;
 }
 .resumen2021__card__video{
     background-color: black;
     margin: 100px;
+}
+.background__image{
+    background-image: url(Assets/2.png);
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.resumen2021__banner{
+    background-image: url(Assets/background\ temporada\ 2021\ final.png);
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+
+.resumen2021_banner_title{
+    color: black;
+    background-color: azure;
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
 }
 
  /* Desde acá hacia abajo comenzamos a declarar los media queries */
