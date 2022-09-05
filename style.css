@@ -225,6 +225,9 @@ font-weight: 700;
     margin: auto;
     margin-top: 20px;
 }
+.gran-premio__content{
+    position: relative;
+}
 .gran-premio__title{
     border-bottom: 3px solid black;
     font-size: 30ppx;
@@ -258,8 +261,7 @@ font-weight: 700;
     text-transform: uppercase;
     }
 .gran-premio__img--circuit{
-    display: block;
-    max-height: 200px;
+    max-height: 150px;
     margin: 5px 350px;
     }
 .gran-premio__circuit{
@@ -279,10 +281,19 @@ font-weight: 700;
     width: 33%;
     color: #1f3f6e;
 }
-.gran-premio__title--date{
+.gran-premio__title--date{img
     font-style: italic;
     color: #CC0000;
 }
+.transform__img{
+    transition: all 0.8s ;
+}
+
+.transform__img :hover{
+    /* transform: translateX(100px); */
+    transform: scale(1.8);
+}
+
 
  /* Desde acá hacia abajo comenzamos a declarar los media queries */
  /* Mobile last: breakpoint de mayor a menor */
