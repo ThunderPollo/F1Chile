@@ -225,9 +225,6 @@ font-weight: 700;
     margin: auto;
     margin-top: 20px;
 }
-.gran-premio__content{
-    position: relative;
-}
 .gran-premio__title{
     border-bottom: 3px solid black;
     font-size: 30ppx;
@@ -264,9 +261,6 @@ font-weight: 700;
     max-height: 150px;
     margin: 5px 350px;
     }
-.gran-premio__circuit{
-    /* text-align: center; */
-}
 .gran-premio__circuit--item{
     text-align: left;
 }
@@ -292,6 +286,31 @@ font-weight: 700;
 .transform__img :hover{
     /* transform: translateX(100px); */
     transform: scale(1.8);
+}
+.animacion{
+    /* position: relative; */
+}
+.animacion-carrera{
+    /* left: 20px;
+    top: 20px; */
+    background-image: url(Assets/Auto\ f1\ animación.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:auto ;
+    height: 200px;
+    animation-name: carrera;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes carrera {
+0% {
+}
+100%{ 
+    background-position: right;
+}
+     
+
 }
 
 
