@@ -302,6 +302,7 @@ font-weight: 700;
     animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 @keyframes carrera {
 0% {
@@ -309,8 +310,6 @@ font-weight: 700;
 100%{ 
     background-position: right;
 }
-     
-
 }
 
 
