@@ -19,11 +19,13 @@
 }
 .resumen2021{
     &__content{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 20px;
+        //grid-template-rows: repeat(2, 1fr);
+        @include grid(3,2);
+        
         max-width: 100%;
-        gap: 20px;
         padding-top: 0px;   
         margin: 40px;
     }

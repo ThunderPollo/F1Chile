@@ -28,3 +28,22 @@ body {
     bottom: 10px;
     right: 10px;
  }
+
+ //extends
+ .container{
+    padding: 30px 20px;
+    max-width: auto;
+    margin: 0 auto;
+ }
+
+ //mixins
+@mixin grid($columns, $rows) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    gap: 20px;
+
+    @if ($columns>5) {
+        display: none;
+    }
+}
