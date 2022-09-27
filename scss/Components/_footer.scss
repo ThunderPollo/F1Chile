@@ -16,3 +16,66 @@
         color: white;
     }
 }
+
+.footer2{
+    background-color: #CC0000;
+    color: white;
+    padding: 60px 20px;
+
+    &__content{
+        @extend .container;
+        @include grid(3,1);
+        h4{
+            color: white;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        &-list{
+            li{
+                max-width: 10px 0;
+                text-align: center;
+            }
+            a{
+                color: white;
+                transition: all 0.3s;
+
+                &:hover{
+                    color:#1f3f6e;
+                }
+            }
+        }
+        
+    }
+    &__rrss{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+
+        //maps
+        $iconSocialMedia: (
+            github: #1f3f6e,
+            twitter: #55acee,
+            instagram: #c92d8f,
+            facebook: #2279e4,
+            );
+        @each $nameSocialMedia, $colorIcon in $iconSocialMedia{
+            .rs-#{$nameSocialMedia} {
+                color: white;
+                font-size: 30px;
+                transition: all 0.3;
+
+                &:hover{
+                    color: $colorIcon;
+                }
+            }
+        }
+    }
+    &__copy{
+        margin-top: 40px;
+        text-align: center;
+    }
+}

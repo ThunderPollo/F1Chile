@@ -29,7 +29,7 @@ body {
   bottom: 10px;
   right: 10px; }
 
-.container, .header {
+.container, .header, .footer2__content {
   padding: 30px 20px;
   max-width: auto;
   margin: 0 auto; }
@@ -71,6 +71,62 @@ body {
     padding-top: 40px; }
   .footer a {
     color: white; }
+
+.footer2 {
+  background-color: #CC0000;
+  color: white;
+  padding: 60px 20px; }
+  .footer2__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px; }
+    .footer2__content h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center; }
+    .footer2__content h3 {
+      text-align: center; }
+    .footer2__content-list li {
+      max-width: 10px 0;
+      text-align: center; }
+    .footer2__content-list a {
+      color: white;
+      transition: all 0.3s; }
+      .footer2__content-list a:hover {
+        color: #1f3f6e; }
+  .footer2__rrss {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px; }
+    .footer2__rrss .rs-github {
+      color: white;
+      font-size: 30px;
+      transition: all 0.3; }
+      .footer2__rrss .rs-github:hover {
+        color: #1f3f6e; }
+    .footer2__rrss .rs-twitter {
+      color: white;
+      font-size: 30px;
+      transition: all 0.3; }
+      .footer2__rrss .rs-twitter:hover {
+        color: #55acee; }
+    .footer2__rrss .rs-instagram {
+      color: white;
+      font-size: 30px;
+      transition: all 0.3; }
+      .footer2__rrss .rs-instagram:hover {
+        color: #c92d8f; }
+    .footer2__rrss .rs-facebook {
+      color: white;
+      font-size: 30px;
+      transition: all 0.3; }
+      .footer2__rrss .rs-facebook:hover {
+        color: #2279e4; }
+  .footer2__copy {
+    margin-top: 40px;
+    text-align: center; }
 
 @media (max-width: 1240px) {
   .ultima__content {
