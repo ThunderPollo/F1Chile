@@ -1,0 +1,5 @@
+User-agentt: *
+
+Allow: /
+
+sitemap: https://thunderpollo.github.io/F1Chile/sitemap.xml
